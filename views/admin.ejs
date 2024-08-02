@@ -1,0 +1,220 @@
+<%- include('./partials/header') %>
+
+<script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        #loader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+        #content {
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loader {
+            border-top-color: #3498db;
+            animation: spin 1s linear infinite;
+        }
+        
+    </style>
+
+<body>
+    <div id="loader">
+        <div class="w-screen flex items-center justify-center h-screen bg-black">
+            <div class="text-center  w-full h-full flex items-center justify-center   ">
+                <div class=" ">
+                    <h3 class="text-6xl text-yellow-600 font-bold ">/Account</h3>
+                    
+                </div> 
+                <div class="loader ease-linear border-4 border-t-4 border-gray-200 h-[1vw] w-[1vw] ml-4 "></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div class="w-full h-screen flex items-start px-20 py-20">
+            <div class="w-[25%] flex h-screen flex-col items-start mt-8">
+                <div class="flex flex-col">
+                    <a class="p-3 w-fit text-2xl mb-2" href="/owners/allproducts"><button class="p-3 rounded-full border-[2px] border-zinc-500 text-yellow-600 text-black">All Products</button></a>
+                    <a class="p-3 w-fit text-2xl mb-2" href="/owners/admin"><button class="p-3 rounded-full border-[2px] border-zinc-500 text-yellow-600 text-black">Create new product</button></a>
+                </div>
+            </div>
+            <div class="w-[75%] flex flex-col gap-5 h-screen ">
+                <div class="flex justify-between">
+                    <a class="text-yellow-500 hover:underline" href="/shop">Go Back To Shop</a>
+                    <a class="text-yellow-500 hover:underline" href="/cart">Cart</a>
+                </div>
+                
+                <div class="flex items-start gap-8">
+                    <div class="w-[20rem] bg-yellow-300 ">
+                        <div class="w-full">
+                            <img  src="https://joytreeglobal.com/wp-content/uploads/Urban-Gear-Travello-Business-Bag-with-Overnighter_1.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Urban Gear Travello Business Bag with Overnighter</h3>
+                                <h4 class="mt-4 text-xl">₹1,699.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 51%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full ">
+                            <img  src="https://joytreeglobal.com/wp-content/uploads/JackJones-Black-Hard-Shell-Oscar-Duffle-Bag.psd_1.webp" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Jack & Jones Black Hard Shell Oscar Duffle Bag</h3>
+                                <h4 class="mt-4 text-xl">₹3,499.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 56%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full ">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Killer-3-Travel-Bag-Set-EK-Matra-01-1.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Killer 3 Travel Bag Set- Premium Version</h3>
+                                <h4 class="mt-4 text-xl">₹1,299.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 57% (Limited Offer)</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex items-start gap-8">
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Pocket-Designer-Laptop-Bag-with-Double-Bottle-Pocket-Rain-Cover.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Pocket Designer Laptop Bag with Double Bottle Pocket</h3>
+                                <h4 class="mt-4 text-xl">₹949.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 37%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Beautiful-Customized-Tote-Bag-for-Women-White_1.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Beautiful Customized Tote Bag for Women (White)</h3>
+                                <h4 class="mt-4 text-xl">₹89.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 44%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full ">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Jack-and-Jones-kund-Duffle-Bag-04.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Jack and Jones Knud Duffle Bag</h3>
+                                <h4 class="mt-4 text-xl">₹749.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 53%</h6>
+                            </div>
+                              <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex items-start gap-8">
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full ">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/OON-Ecofelt-mini-Backpack_1.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">OON Ecofelt Mini Backpack- Premium Version</h3>
+                                <h4 class="mt-4 text-xl">₹1,619.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 35%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Explorer-01.jpg" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Explorer 3 in 1 Travel Bag for Business – FUZO</h3>
+                                <h4 class="mt-4 text-xl">₹1,700.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 32%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-[20rem] bg-yellow-300">
+                        <div class="w-full ">
+                            <img src="https://joytreeglobal.com/wp-content/uploads/Urban-Gear-Gypsy-Classic-Backpack_2.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div>
+                                <h3 class="w-64 text-xl">Urban Gear Gypsy Classic Backpack</h3>
+                                <h4 class="mt-4 text-xl">₹799.00</h4>
+                                <h6 class="mt-4 text-red-500">Save 38%</h6>
+                            </div>
+                            <a class="w-7 h-7 flex items-center justify-center rounded-full bg-white" href="">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <a class="p-2 bg-gray-500 text-white rounded" href="/owners/admin2"><button class="p-3 rounded-full border-[2px] border-zinc-500 text-white">NEXT</button></a>
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            setTimeout(() => {
+                loader.style.display = 'none';
+                content.style.display = 'block';
+            }, 1000); // Display loader for 4 seconds
+        });
+    </script>
+    <%- include('./partials/footer') %>
+</body>
+    
